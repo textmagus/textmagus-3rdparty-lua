@@ -29,11 +29,11 @@
 ** variables that Lua check to set its paths.
 */
 #if !defined(LUA_PATH_VAR)
-#define LUA_PATH_VAR	"LUA_PATH"
+#define LUA_PATH_VAR	"TA_LUA_PATH"
 #endif
 
 #if !defined(LUA_CPATH_VAR)
-#define LUA_CPATH_VAR	"LUA_CPATH"
+#define LUA_CPATH_VAR	"TA_LUA_CPATH"
 #endif
 
 #define LUA_PATHSUFFIX		"_" LUA_VERSION_MAJOR "_" LUA_VERSION_MINOR
