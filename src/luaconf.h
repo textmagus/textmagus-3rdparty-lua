@@ -541,7 +541,7 @@
 #elif LUA_INT_TYPE == LUA_INT_LONGLONG	/* }{ long long */
 
 /* use presence of macro LLONG_MAX as proxy for C99 compliance */
-#if defined(LLONG_MAX)		/* { */
+#if defined(LLONG_MAX) && !defined(LUA_PREFER___INT64)		/* { */
 /* use ISO C99 stuff */
 
 #define LUA_INTEGER		long long
